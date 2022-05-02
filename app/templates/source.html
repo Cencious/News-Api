@@ -1,0 +1,22 @@
+{% block content %}
+
+    <title>{{ title }}</title>
+
+    <div class="container-fluid">
+
+        <h2 class="article-header">Articles</h2>
+
+        <div class="row source-row">
+
+            <ul class="list-unstyled sources-list">
+
+                {{ macro.displayArticleList(articles) }}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+
