@@ -30,12 +30,12 @@ Now navigate to your browser at: localhost://127.0.0.15000/
 
 
 
-Technologies Used
-## *Python3  
-# #*Flask 
-# #*HTML 
-# #*Bootstrap
-## *CSS
+## Technologies Used
+*Python3  
+*Flask 
+*HTML 
+*Bootstrap
+*CSS
 
 
 
