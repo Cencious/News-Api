@@ -10,7 +10,7 @@ class ArticleTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_article = Articles('Wycliffe Musalia','Tim Wanyonyi Kickstarts Westlands MP Campaigns Despite ODM Ticket Stalemate with Fred Gumo Son','Westlands MP Tim Wanyonyi dropped his gubernatorial bid after Azimio la Umoja leadership coerced him to back Polycarp Igathe','https://www.tuko.co.ke/politics/453154-tim-wanyonyi-kickstarts-westlands-mp-campaigns-despite-odm-ticket-stalemate-fred-gumos-son/','https://netstorage-tuko.akamaized.net/images/14a314fedd9bd531.jpg?imwidth=720','2022-04-02T05:22:26Z')
+        self.new_article = Articles('Polycarp Igathe Pays Tim Wanyonyi Courtesy Call Days after He Stepped Down for His Bid Read more: https://www.tuko.co.ke/politics/452803-polycarp-igathe-pays-tim-wanyonyi-courtesy-call-days-after-he-stepped-down-his-bid/)
 
     def test_instance(self):
         '''
