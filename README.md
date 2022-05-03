@@ -12,7 +12,9 @@ and also a user can search for any topic.It is built using Python framework know
 ## Setup/Installation Requirements
 First clone the repo $ git clone hhttps://github.com/Cencious/News-Api.git
 
-After cloning, navigate to the project: $ cd news-flask
+After cloning, navigate to the project: $ cd News-Api
+
+On your terminal run the command:- for vs code $code . then for Atom $ atom .
 
 Then install all the requirements through pip: $ pip install -r requirements.txt
 
