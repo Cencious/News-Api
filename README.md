@@ -10,7 +10,7 @@ This is an application that uses an API to gather data and display it on the web
 and also a user can search for any topic.It is built using Python framework known as Flask.
 
 ## Setup/Installation Requirements
-First clone the repo $ git clone hhttps://github.com/Cencious/News-Api.git
+First clone the repo $ git clone https://github.com/Cencious/News-Api.git
 
 After cloning, navigate to the project: $ cd News-Api
 
