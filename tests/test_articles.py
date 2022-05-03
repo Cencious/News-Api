@@ -10,7 +10,7 @@ class ArticleTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_article = Articles('Polycarp Igathe Pays Tim Wanyonyi Courtesy Call Days after He Stepped Down for His Bid Read more: https://www.tuko.co.ke/politics/452803-polycarp-igathe-pays-tim-wanyonyi-courtesy-call-days-after-he-stepped-down-his-bid/)
+        self.new_article = Articles('Polycarp Igathe Pays Tim Wanyonyi Courtesy Call Days after He Stepped Down for His Bid Read more: https://www.tuko.co.ke/politics/452803-polycarp-igathe-pays-tim-wanyonyi-courtesy-call-days-after-he-stepped-down-his-bid/')
 
     def test_instance(self):
         '''
