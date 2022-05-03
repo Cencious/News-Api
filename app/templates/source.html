@@ -1,22 +1,16 @@
-{% block content %}
+<!doctype html>
+<html lang="en">
 
-    <title>{{ title }}</title>
+<head>
+    {% if title %}
+    <title> {{ title }} </title>
+    {% else %}
+    <title> Welcome to {Source_id} </title>
+    {% endif %}
+</head>
 
-    <div class="container-fluid">
+<body>
 
-        <h2 class="article-header">Articles</h2>
+</body>
 
-        <div class="row source-row">
-
-            <ul class="list-unstyled sources-list">
-
-                {{ macro.displayArticleList(articles) }}
-            </ul>
-        </div>
-    </div>
-{% endblock %}
-
-
-
-
-
+</html>

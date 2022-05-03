@@ -1,8 +1,8 @@
 {% extends 'bootstrap/base.html' %}
-    <!-- Content Block -->
-    {% block content %} {% endblock %}
-    <!-- Navbar block  -->
-    {% block navbar %} 
-    {% include 'navbar.html' %} 
-    
-    {% endblock %}
+
+{% block styles %} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&display=swap" rel="stylesheet">{% endblock %}
+
+<!----Navbar block---->
+{% block navbar %} {% include 'navbar.html' %} {% endblock %}

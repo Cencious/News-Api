@@ -1,39 +1,16 @@
-{% macro displaySourcesList(sources) %}
-{% for source in sources %}
-<div class="d-flex justify-content-center col-sm-6">
-  <div style="margin:0 auto; padding:5px; background-color: #d1298b54;">
-    <a href='/articles/{{source.id}}'>
-      <h3 style="font-weight:bold; color: #ebbaba;">{{ source.name}}</h3>
-    </a>
-    <h5 style="color: #68532cd3;">{{source.category.upper()}}</h5>
-    <div style="height:150px; background-color:#9f7eebb9;">
-      <p style="font-weight:bold; padding:5px; font-size:20px;">{{ source.description|truncate(150)}}</p>
+{% macro sourceCategories(categories) %} {% for category in categories %}
+<div class="col-md-3">
+    <div class="card articles">
+        <div class="card-header">
+            <h3> {{category.name}} </h3>
+        </div>
+        <hr>
+        <div class="card-body">
+            <p> {{category.description|truncate(100)}}
+                <br>
+                <a href="{{category.url}}">Read Articles</a>
+            </p>
+        </div>
     </div>
-  </div>
 </div>
-{% endfor %}
-{% endmacro %}
-
-<!-- Display articles -->
-{% macro displayArticleList(article_list) %}
-{% for article in article_list %}
-
-<!-- print source here -->
-<div class="overlay">
-
-  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" style="background-color: #dfbfbf;">
-    <li class="well" style="list-style:none;background-color:#d3729ff1;">
-      <a href="{{article.url}}" style="text-decoration:none;">
-        <h3 style="font-size:16px;color:#faf0dc; font-size: x-large;">
-          {{article.title}}
-        </h3>
-        
-        <p style="font-size:10px;"> Date: {{article.publishedAt[:10]}} </p>
-        <p style="font-size:12px; color:black;">{{article.description|truncate(70)}}</p>
-        <a href="{{ article.url }}" class="article-link" style="color:#971515;"> Read more...</a>
-        <img src='{{article.urlToImage}}' width="" height="" class="img-responsive">
-    </li>
-  </div>
-</div>
-{% endfor %}
-{% endmacro %}
+{% endfor %} {% endmacro %}

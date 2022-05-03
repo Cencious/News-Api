@@ -1,17 +1,63 @@
-{% extends 'base.html'%}
-{% import 'macros.html' as macro%}
-{% block styles %}
-{{ super() }}
+<!doctype html> {% extends 'base.html' %} {% import 'macros.html' as macro%}
+<html lang="en">
 
-
-{% endblock %}
 {% block content %}
-<div class="container-fluid" style="margin-top:10px;"></div>
-    <div class="container-fluid">
-      <div class="row">
-        <ul>
-          {{ macro.displaySourcesList(sources)}}
-        </ul>
-      </div>
+<div class="container-fluid">
+    <form>
+        <input type="text" name="article_query" placeholder="Search for News" class="form-control">
+        <input type="submit" value="Get News" class="btn">
+    </form>
+    <br>
+    <div class="row">
+        <div class="col-md-12 heading">
+            <br>
+            <br>
+            <h1>Cedi News Hub | Get news from all corners of the world!</h1>
+        </div>
     </div>
+    <div class="card">
+        <div class="row">
+            <div class="col-md-12 cat" id="general news">
+                <h1>General News</h1>
+            </div>
+            {{macro.sourceCategories(general)}}
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 cat" id="sports">
+            <h1> Sports </h1>
+        </div>
+        {{macro.sourceCategories(sports)}}
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 cat" id="business">
+            <h1> Business </h1>
+        </div>
+        {{macro.sourceCategories(business)}}
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 cat" id="technology">
+            <h1> Technology </h1>
+        </div>
+        {{macro.sourceCategories(technology)}}
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 cat" id="entertainment">
+            <h1> Entertainment </h1>
+        </div>
+        {{macro.sourceCategories(entertainment)}}
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 cat" id="science">
+            <h1> Science </h1>
+        </div>
+        {{macro.sourceCategories(science)}}
+    </div>
+</div>
+
 {% endblock %}
