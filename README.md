@@ -23,7 +23,7 @@ Make the file executable: $ chmod +x start.sh
 Run the application: $ ./start.sh
 
 Now navigate to your browser at: localhost://127.0.0.15000/
-  
+
 
 ## Screenshot
 
